@@ -1,0 +1,223 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variable */
+:root {
+    --navabar-height: var(60px);
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* height: 30px; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    margin: 0px 9px;
+    padding: 0px 9px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* navigation bar: logo and image  */
+#logo {
+    margin: 0px 12px;
+}
+
+#logo img {
+    height: 90px;
+    margin: 10px 10px;
+}
+
+/* home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    background: url('../picsProject/bg3.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+}
+
+/* Services section  */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 14px;
+    margin: 4px 25px;
+    border-radius: 28px;
+    background-color: rgba(240, 223, 223, 0.856);
+    margin-bottom: 10px;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#fd {
+    margin: 22px auto -15px !important;
+}
+
+/* clients section  */
+#clients-section {
+    position: relative;
+}
+
+#clients-section::before {
+    content: "";
+    background: url('../picsProject/bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 100px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+/* contacts */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../picsProject/contact.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    /*ye wala dekhlena zra 'coz iske wjh se label box ke uppr aagya, pehle bgl mein tha */
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.7rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}

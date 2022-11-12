@@ -1,0 +1,65 @@
+
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+font-size: 0.94rem;
+padding: 0px 3px;}
+#navbar ul li {
+    padding-bottom: 4px;
+}
+/* Home section  */
+#home{
+    height: 450px;
+    padding: 0px 75px;
+}
+#home::before{
+    height: 600px;
+    /* i dont think this height is needed */
+    /* needed it bro iphone ke hisaab se set ni hora tha  */
+}
+#home p{
+    font-size: 14px;
+}
+
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+#services .box{
+    margin: 7px 0px;
+    padding: 8px;
+    padding-top: 0px;
+}
+
+/* Clients section  */
+#clients{
+    /* overflow: hidden; */
+    /* see this one isse shi hogya page pe adjust hogya coz symbol bhr ja re the page ke isliye shi se nin ho rha tha   */
+    /* overflow hidden se elements jo fit ni ho re hote page ke andar ghus jaate ...now istead of it we'll use flex wrap */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#clients img{
+    height: 45px; 
+}
+.client-item{
+    padding: 10px;
+}
+
+/* Contact us section  */
+#contact-box form{
+    width: 80%;
+}
+ 
+/* Footer  */
+
+/* Utility classes */
+.h-primary{
+    font-size: 30px;
+}
+.h-secondary{
+    font-size: 24px;
+}
+
